@@ -1,0 +1,84 @@
+@import '~@angular/material/theming';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+
+@include mat-core();
+
+//colors
+$brand: #1976D2;
+
+//main theme
+$primary: mat-palette($mat-blue, 700, 500, 900);
+$accent: mat-palette($mat-grey, 700, 500, 900);
+$warn: mat-palette($mat-red, 700, 500, 900);
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+//button theme
+// $primaryButton: mat-palette($mat-blue, 500, 300, 700);
+// $accentButton: mat-palette($mat-amber, 500, 300, 700);
+// $warnButton: mat-palette($mat-red, 800, 700, 900);
+// $buttonTheme: mat-light-theme($primaryButton, $accentButton, $warnButton);
+
+// @include mat-button-theme($buttonTheme);
+
+//input theme
+// $primaryInput: mat-palette($mat-blue, 500, 300, 700);
+// $accentInput: mat-palette($mat-amber, 500, 300, 700);
+// $warnInput: mat-palette($mat-red, 900, 700, 500);
+// $inputTheme: mat-light-theme($primaryInput, $accentInput, $warnInput);
+
+// @include mat-form-field-theme($inputTheme);
+// @include mat-input-theme($inputTheme);
+
+//radio theme
+// $primaryRadio: mat-palette($mat-blue, 500, 300, 700);
+// $accentRadio: mat-palette($mat-blue, 500, 300, 700);
+// $warnRadio: mat-palette($mat-blue, 500, 300, 700);
+// $radioTheme: mat-light-theme($primaryRadio, $accentRadio, $warnRadio);
+
+// @include mat-radio-theme($radioTheme);
+
+//slider theme
+// $primarySlider: mat-palette($mat-blue, 500, 300, 700);
+// $accentSlider: mat-palette($mat-blue, 500, 300, 700);
+// $warnSlider: mat-palette($mat-blue, 500, 300, 700);
+// $sliderTheme: mat-light-theme($primarySlider, $accentSlider, $warnSlider);
+
+// @include mat-slider-theme($sliderTheme);
+
+//tab theme
+// $primaryTabs: mat-palette($mat-red, 600, 400, 800);
+// $accentTabs: mat-palette($mat-amber, 500, 300, 700);
+// $warnTabs: mat-palette($mat-red, 800, 700, 900);
+// $tabsTheme: mat-light-theme($primaryTabs, $accentTabs, $warnTabs);
+
+// @include mat-tabs-theme($tabsTheme);
+
+//toolbar theme
+// $primaryToolbar: mat-palette($mat-blue, 700, 500, 900);
+// $accentToolbar: mat-palette($mat-grey, 700, 500, 900);
+// $warnToolbar: mat-palette($mat-red, 700, 500, 900);
+// $toolbarTheme: mat-light-theme($primaryToolbar, $accentToolbar, $warnToolbar);
+
+// @include mat-toolbar-theme($toolbarTheme);
+
+// @include mat-core-theme($theme);
+// @include mat-checkbox-theme($theme);
+// @include mat-slide-toggle-theme($theme);
+// @include mat-progress-bar-theme($theme);
+// @include mat-progress-spinner-theme($theme);
+
+body {
+  font-family: $mat-font-family;
+  font-weight: normal;
+}
+
+a {
+  color: #999999;
+}
+
+h1, h2, h3, h4 {
+  font-weight: normal;
+}

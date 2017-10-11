@@ -1,0 +1,24 @@
+<mat-card>
+  <mat-card-title>Sign In</mat-card-title>
+  <mat-spinner *ngIf="submitted" [diameter]="50" [strokeWidth]="5"></mat-spinner>
+  <mat-card-subtitle class="error small" *ngIf="errorMessage">{{ errorMessage }}</mat-card-subtitle>
+  <mat-card-content>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+      <mat-form-field>
+        <input #EMAIL matInput type="email" formControlName="email" placeholder="Email"/>
+        <mat-hint class="error">Enter your email address.</mat-hint>
+      </mat-form-field>
+      <mat-form-field>
+        <input #PASSWORD matInput type="password" formControlName="password" placeholder="Password"/>
+        <mat-hint class="error">Enter your password.</mat-hint>
+      </mat-form-field>
+      <div class="row buttons">
+        <button mat-raised-button color="primary" type="submit">Sign In</button>
+      </div>
+      <div class="row links">
+        <a routerLink="/landing/forgotPassword">Forgot Password</a>
+        <a routerLink="/landing/register" class="register">Register</a>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>

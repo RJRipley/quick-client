@@ -1,0 +1,46 @@
+div.Change {
+  border-bottom: solid 1px #EFEFEF;
+  border-top: solid 1px #EFEFEF;
+}
+
+div.Header {
+  padding: 0 16px;
+}
+
+div.Header div.Avatar {
+  margin: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div.Initials {
+  background: #1976D2;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 40px;
+}
+
+mat-card-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 16px;
+  margin-right: 48px;
+}
+
+mat-card-subtitle {
+  display: block;
+  margin-bottom: 16px;
+  margin-top: -4px;
+  margin-right: 48px;
+}
+
+mat-toolbar.mat-primary {
+  background-color: #000000;
+  color:#1976D2;
+}

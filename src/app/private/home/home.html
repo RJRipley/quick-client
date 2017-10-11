@@ -1,0 +1,28 @@
+<mat-toolbar class="Main" color="primary">
+  <div class="FlexLeft">Company</div>
+  <div class="FlexCenter"></div>
+  <div class="FlexRight">
+    <div class="UserDetails">
+      <div class="Avatar">
+        <div class="Initials" [mat-menu-trigger-for]="menu">{{ initials }}</div>
+      </div>
+      <mat-menu y-position="below" x-position="before" #menu="matMenu">
+        <div class="UserDetailsMenu">
+          <div class="Header" disabled>
+            <mat-card-title class="Name">{{ name }}</mat-card-title>
+            <mat-card-subtitle class="Email">{{ email }}</mat-card-subtitle>
+            <div class="Avatar">
+              <div class="Initials" [mat-menu-trigger-for]="menu">{{ initials }}</div>
+            </div>
+          </div>
+          <div mat-menu-item class="Change" (click)="onChangePassword()" title="Change Password">Change Password</div>
+          <div mat-menu-item disabled class="SignOut">
+            <button mat-raised-button color="primary" title="Sign Out" (click)="onLogout()">SIGN OUT</button>
+          </div>
+        </div>
+      </mat-menu>
+    </div>
+  </div>
+</mat-toolbar>
+
+<router-outlet></router-outlet>

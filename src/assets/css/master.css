@@ -1,0 +1,81 @@
+/*
+ *
+ */
+
+body {
+  padding:0;
+  margin:0;
+}
+
+*
+{
+	outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.Flex {
+	display: flex;
+}
+
+.Flex.Row {
+	flex-direction: row;
+}
+
+.Flex.Column {
+	flex-direction: column;
+}
+
+.FlexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-grow: 1;
+	flex-basis: 34%;
+}
+
+.FlexFill {
+	flex: 1 1 auto;
+}
+
+.FlexLeft {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-basis: 33%;
+}
+
+.FlexRight {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-basis: 33%;
+}
+
+.FlexEnd {
+	justify-content: flex-end;
+}
+
+/* Main Pages */
+
+home {
+  background-color: #333333;
+  height:100%;
+  position:absolute;
+  width: 100%;
+}
+
+landing {
+  background: url(/assets/img/landing-background.jpg) no-repeat center center;
+  background-size:cover;
+  height:100%;
+  position:absolute;
+  width:100%;
+}
+
