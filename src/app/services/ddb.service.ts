@@ -10,6 +10,7 @@ export class DynamoDBService
 {
   constructor(public cognitoService:CognitoService) {
     console.log("DynamoDBService: constructor");
+    AWS.config.update({region: environment.region});
   }
 
   getAWS() {
@@ -55,7 +56,7 @@ export class DynamoDBService
       };
 
     DDB.putItem(itemParams, function (result) {
-      //
+      // console.log(result);
     });
   }
 
